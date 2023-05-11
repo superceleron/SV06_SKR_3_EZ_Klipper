@@ -17,3 +17,44 @@ and if i set the right one to 0.600 like the left one, the left was faster than 
 - Also do not touch stealthchop_threshold leave at 99999.
 
 - I will try later to include some pictures of the hw install.
+
+@@@@@@@@@@ GCODE FOR SLICER START / END PRINT MACROS @@@@@@@@@
+
+#### PRUSASLICER ####
+in Printer settings / General/
+Gcode flavor : KLIPPER
+
+in Printer settings / Custom Gcode
+  - START GCODE :
+START_PRINT EXTRUDER=[first_layer_temperature] BED=[first_layer_bed_temperature]
+  - END GCODE :
+END_PRINT
+
+#### SUPERSLICER #### 
+in Printer settings / General/
+Gcode flavor : KLIPPER
+
+in Printer settings / Custom Gcode
+  - START GCODE :
+START_PRINT EXTRUDER=[first_layer_temperature] BED=[first_layer_bed_temperature]
+  -  END GCODE :
+END_PRINT
+
+#### ORCA SLICER #### 
+in Printer settings / Machine G-CODE/
+Gcode flavor : KLIPPER
+
+in Printer settings / Custom Gcode
+  - START GCODE :
+START_PRINT EXTRUDER=[first_layer_temperature] BED=[first_layer_bed_temperature]
+  -  END GCODE :
+END_PRINT
+
+#### CURA #### 
+in top menu Settings / Manage printers / Printers / select your printer then Machine settings
+
+  - START GCODE :
+START_PRINT EXTRUDER={material_print_temperature_layer_0} BED={material_bed_temperature_layer_0}
+  - END GCODE :
+END_PRINT
+
