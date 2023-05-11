@@ -3,11 +3,11 @@ My Klipper config for the Sovol SV06 with a SKR 3 EZ board.
 
 It includes KAMP and Z_TILT_ADJUST + Display.
 Based of this ones: 
-https://github.com/Pr20100/SOVOL-SV06-Klipper-profile
-https://github.com/bassamanator/Sovol-SV06-firmware
+- https://github.com/Pr20100/SOVOL-SV06-Klipper-profile
+- https://github.com/bassamanator/Sovol-SV06-firmware
 
 Use this case( also is in this one i based my hw install):
-https://www.printables.com/model/382629-sovol-sv06-skr-3-ez-mainboard-case-upgrade
+- https://www.printables.com/model/382629-sovol-sv06-skr-3-ez-mainboard-case-upgrade
 
 I use a meanwell lrs-350-24 powersupply, and all my "bushes" are ORIGINAL Igus Drylin RJ4JP-03-08(for the bed and gantry) & RJ4JP-01-08(For the Z's), i do not recommend that amazon ones where you get a pack of 10 for almost nothing, the tolerances on them are not good!
 Also added the bearing 688ZZ to the leadscrews.
